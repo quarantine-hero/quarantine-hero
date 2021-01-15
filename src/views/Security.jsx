@@ -6,10 +6,10 @@ import Loader from '../components/loader/Loader';
 import StyledMarkdown from '../util/StyledMarkdown';
 
 const icons = {
-  dont_help: require('../assets/dont_help.svg'),
-  local: require('../assets/lokal.svg'),
-  distanced: require('../assets/distanziert.svg'),
-  consistent: require('../assets/konsistent.svg'),
+  dont_help: require('../assets/dont_help.svg').default,
+  local: require('../assets/lokal.svg').default,
+  distanced: require('../assets/distanziert.svg').default,
+  consistent: require('../assets/konsistent.svg').default,
 };
 
 function ContentBlock({ className, title, text, icon }) {

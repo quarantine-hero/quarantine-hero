@@ -17,28 +17,28 @@ export default function NotFound() {
 
     switch (randomNum) {
       case 1:
-        srcPath = require('../assets/icon_iron.svg');
+        srcPath = require('../assets/icon_iron.svg').default;
         break;
       case 2:
-        srcPath = require('../assets/icon_baby.svg');
+        srcPath = require('../assets/icon_baby.svg').default;
         break;
       case 3:
-        srcPath = require('../assets/icon_barbecue.svg');
+        srcPath = require('../assets/icon_barbecue.svg').default;
         break;
       case 4:
-        srcPath = require('../assets/icon_propose.svg');
+        srcPath = require('../assets/icon_propose.svg').default;
         break;
       case 5:
-        srcPath = require('../assets/icon_sauna.svg');
+        srcPath = require('../assets/icon_sauna.svg').default;
         break;
       case 6:
-        srcPath = require('../assets/icon_taste.svg');
+        srcPath = require('../assets/icon_taste.svg').default;
         break;
       case 7:
-        srcPath = require('../assets/icon_saw.svg');
+        srcPath = require('../assets/icon_saw.svg').default;
         break;
       default:
-        srcPath = require('../assets/icon_taste.svg');
+        srcPath = require('../assets/icon_taste.svg').default;
     }
 
     return <img className="w-10/12 h-auto" src={srcPath} alt="svg" />;

@@ -10,6 +10,7 @@ export default async function isEmailVerified(user) {
   const emailVerifiedStateFromToken = token.claims.email_verified;
 
   if (emailVerifiedStateFromToken !== user.emailVerified) {
+    // eslint-disable-next-line no-console
     console.log('Tokens out of sync. Refreshing');
     const newToken = await user.getIdTokenResult(true);
     if (newToken.claims.email_verified !== user.emailVerified) {

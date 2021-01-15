@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CookieConsentContext } from '../util/CookieConsent';
 
-
 export default function Footer() {
   const { t } = useTranslation();
   const cookiesConsented = useContext(CookieConsentContext);

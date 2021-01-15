@@ -104,7 +104,6 @@ export default function AskForHelp() {
         <LocationInput required value={location} onChange={handleChange} onSelect={handleSelect} />
       </div>
 
-
       <div className="py-3">
         <div className="w-full">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="request_text">

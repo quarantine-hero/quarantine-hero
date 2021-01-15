@@ -77,7 +77,7 @@ export default function CompleteNotification() {
           {t('views.completeNotification.error')}
         </p>
         <div className="flex justify-center flex-col items-center mb-8">
-          <img className="h-48 w-48 my-10" src={require('../assets/error.svg')} alt="" />
+          <img className="h-48 w-48 my-10" src={require('../assets/error.svg').default} alt="" />
           <Link className="btn-green mt-10" to="/notify-me">{t('views.completeNotification.tryAgain')}</Link>
         </div>
       </>
@@ -95,7 +95,7 @@ export default function CompleteNotification() {
         {t('views.completeNotification.needsHelp')}
       </p>
       <div className="flex justify-center flex-col items-center mb-8">
-        <img className="h-48 w-48 my-10" src={require('../assets/success.svg')} alt="" />
+        <img className="h-48 w-48 my-10" src={require('../assets/success.svg').default} alt="" />
         <Link className="btn-green mt-10" to="/dashboard">{t('views.completeNotification.toYourOverview')}</Link>
       </div>
     </>
