@@ -55,7 +55,7 @@ export default function Main() {
           <div className="m-2" />
           <img
             style={{ height: '54px' }}
-            src={require('../assets/bmg_logo.svg')}
+            src={require('../assets/bmg_logo.svg').default}
             alt="zusammen gegen corona logo"
           />
         </div>
@@ -106,7 +106,7 @@ export default function Main() {
             className="flex justify-center items-center rounded text-white p-3 btn-main bg-primary flex-1 hover:opacity-75"
             onClick={() => fb.analytics.logEvent('button_need_help')}
           >
-            <img className="h-8 mr-1" src={require('../assets/help_white.svg')} alt="" />
+            <img className="h-8 mr-1" src={require('../assets/help_white.svg').default} alt="" />
             {t('views.main.buttons.needHelp')}
           </Link>
           <div className="m-1 md:m-4" />
@@ -116,7 +116,7 @@ export default function Main() {
             className="flex justify-center items-center rounded text-white p-3 btn-main bg-secondary flex-1 hover:opacity-75"
             onClick={() => fb.analytics.logEvent('button_want_to_help')}
           >
-            <img className="h-8 mr-1" src={require('../assets/hero_white.svg')} alt="" />
+            <img className="h-8 mr-1" src={require('../assets/hero_white.svg').default} alt="" />
             {t('views.main.buttons.wantToHelp')}
           </Link>
         </div>

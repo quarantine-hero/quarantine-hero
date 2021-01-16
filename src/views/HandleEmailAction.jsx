@@ -254,7 +254,6 @@ function ResetPasswordView({ continueUrl, actionCode }) {
     init();
   }, [actionCode]); // eslint-disable-line react-hooks/exhaustive-deps
 
-
   if (tokenInvalid) {
     return <StatusIndicator success={false} text={t('views.emailActions.invalidToken')} />;
   }
@@ -378,7 +377,6 @@ function RecoverEmailView({ continueUrl, actionCode }) {
 
     init();
   }, [actionCode]); // eslint-disable-line react-hooks/exhaustive-deps
-
 
   if (tokenInvalid) {
     return <StatusIndicator success={false} text={t('views.emailActions.invalidToken')} />;

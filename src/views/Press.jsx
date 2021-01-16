@@ -46,7 +46,7 @@ export default function Press() {
         </div>
         <div className="bg-kaki p-4 mb-10 mt-8 font-open-sans flex">
           <div>
-            <img src={require('../assets/clipboard.svg')} alt="Clipboard" className="w-12 mr-4" />
+            <img src={require('../assets/clipboard.svg').default} alt="Clipboard" className="w-12 mr-4" />
           </div>
           <div>
             <div className="font-bold">
@@ -73,52 +73,52 @@ export default function Press() {
         </div>
         <div className="my-8 flex flex-wrap mb-16">
           <div className="w-1/4 h-auto">
-            <img alt="zdf" src={require('../assets/zdf.jpg')} />
+            <img alt="zdf" src={require('../assets/zdf.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="sueddeutsche_zeitung" src={require('../assets/sueddeutsche_zeitung.jpg')} />
+            <img alt="sueddeutsche_zeitung" src={require('../assets/sueddeutsche_zeitung.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="sat1" src={require('../assets/sat1.jpg')} />
+            <img alt="sat1" src={require('../assets/sat1.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="berliner_morgenpost" src={require('../assets/berliner_morgenpost.jpg')} />
+            <img alt="berliner_morgenpost" src={require('../assets/berliner_morgenpost.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="deutschlandfunk" src={require('../assets/deutschlandfunk.jpg')} />
+            <img alt="deutschlandfunk" src={require('../assets/deutschlandfunk.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="wdr" src={require('../assets/wdr.jpg')} />
+            <img alt="wdr" src={require('../assets/wdr.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="hr" src={require('../assets/hr.jpg')} />
+            <img alt="hr" src={require('../assets/hr.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="br" src={require('../assets/br.jpg')} />
+            <img alt="br" src={require('../assets/br.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="welt" src={require('../assets/welt.jpg')} />
+            <img alt="welt" src={require('../assets/welt.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="focus_online" src={require('../assets/focus_online.jpg')} />
+            <img alt="focus_online" src={require('../assets/focus_online.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="greenpeace_magazin" src={require('../assets/greenpeace_magazin.jpg')} />
+            <img alt="greenpeace_magazin" src={require('../assets/greenpeace_magazin.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="aktion_mensch" src={require('../assets/aktion_mensch.jpg')} />
+            <img alt="aktion_mensch" src={require('../assets/aktion_mensch.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="utopia" src={require('../assets/utopia.jpg')} />
+            <img alt="utopia" src={require('../assets/utopia.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="vogue" src={require('../assets/vogue.jpg')} />
+            <img alt="vogue" src={require('../assets/vogue.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="cosmopolitan" src={require('../assets/cosmopolitan.jpg')} />
+            <img alt="cosmopolitan" src={require('../assets/cosmopolitan.jpg').default} />
           </div>
           <div className="w-1/4 h-auto">
-            <img alt="bunte_de" src={require('../assets/bunte_de.jpg')} />
+            <img alt="bunte_de" src={require('../assets/bunte_de.jpg').default} />
           </div>
         </div>
         <Loader waitOn={articles.length > 0}>

@@ -24,7 +24,7 @@ export default function DesktopMenu() {
   return (
     <div className="hidden md:flex justify-between relative">
       <Link className="-ml-16 block -mt-12" to="/">
-        <img alt="logo" src={require('../assets/logo_mark.svg')} />
+        <img alt="logo" src={require('../assets/logo_mark.svg').default} />
       </Link>
       <Menu />
     </div>

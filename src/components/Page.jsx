@@ -84,7 +84,7 @@ function MobileTopNavigation({ onMenuIconClick }) {
           className="font-main ml-4"
           style={{ fontWeight: '600' }}
         >
-          <img alt="logo" src={require('../assets/logo_invert.svg')} className="h-10" />
+          <img alt="logo" src={require('../assets/logo_invert.svg').default} className="h-10" />
         </Link>
         <div>
           <MenuIcon style={{ fontSize: '40px' }} className="text-gray-600" onClick={onMenuIconClick} data-cy="mobile-menu-icon" />

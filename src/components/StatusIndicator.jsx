@@ -11,7 +11,7 @@ export default function StatusIndicator(props) {
 
   const { t } = useTranslation();
 
-  const imgSource = success ? require('../assets/success.svg') : require('../assets/error.svg');
+  const imgSource = success ? require('../assets/success.svg').default : require('../assets/error.svg').default;
 
   return (
     <div>

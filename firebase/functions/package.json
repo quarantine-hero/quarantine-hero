@@ -18,15 +18,14 @@
   "dependencies": {
     "@sendgrid/mail": "^6.5.4",
     "axios": "^0.21.1",
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.3.0",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.0",
     "geofirestore": "^3.6.0",
     "googleapis": "^49.0.0",
     "moment-timezone": "^0.5.31"
   },
   "devDependencies": {
     "@types/express": "^4.17.6",
-    "@types/firebase": "^3.2.1",
     "firebase-functions-test": "^0.1.6",
     "tslint": "^6.1.2",
     "typescript": "^3.9.5"

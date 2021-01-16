@@ -182,7 +182,7 @@ export default function EntryMap() {
                   <img
                     className="help-request-image"
                     alt="help-marker"
-                    src={require('../assets/help_white.svg')}
+                    src={require('../assets/help_white.svg').default}
                   />
                 </button>
               </Marker>

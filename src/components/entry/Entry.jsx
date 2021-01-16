@@ -260,7 +260,7 @@ export default function Entry(props) {
                 onClick={reportEntry}
               >
                 Post melden?
-                <img className="ml-2 inline-block" src={require('../../assets/flag_white.svg')} alt="" />
+                <img className="ml-2 inline-block" src={require('../../assets/flag_white.svg').default} alt="" />
               </button>
             </div>
           ) : null}
