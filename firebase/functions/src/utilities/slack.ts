@@ -6,6 +6,7 @@ import { onAllowHotlineAnswer } from '../domain/onOfferHelpCreate';
 
 import { AskForHelpCollectionEntry } from '../types/interface/collections/AskForHelpCollectionEntry';
 import { onDeletePost } from '../domain/onDeletePost';
+import { onSolvePost } from '../domain/onSolvePost';
 
 async function postToSlack(snapId: string, snapData: AskForHelpCollectionEntry): Promise<string> {
   const { request, location, isHotline } = snapData.d;
@@ -82,7 +83,7 @@ async function onSlackInteraction(request: functions.https.Request, response: fu
   const hash = hmac.update(signBasestring).digest('hex');
   const mySignature = `${version}=${hash}`;
   const slackSignature = request.headers['x-slack-signature'];
-  
+
   if(slackSignature === undefined || mySignature !== slackSignature) {
     console.warn('Slack message signatures did not match');
     response.status(401).send();
@@ -103,6 +104,7 @@ async function onSlackInteraction(request: functions.https.Request, response: fu
   switch (callbackId) {
     case 'allow_hotline_answer': await onAllowHotlineAnswer(actions, responseUrl); break;
     case 'delete_post': await onDeletePost(messageRef, responseUrl); break;
+    case 'solve_post': await onSolvePost(messageRef, responseUrl); break;
   }
 
   response.status(200).send();
