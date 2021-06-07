@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Exo+2" />
+</head>
+
+<body>
+    <h2>Quarantine Hero Hotline Callback</h2>
+    
+    <p>Callback Number: <span id="lbl_to"></span></p>
+
+    <div id="btn_container">
+        <button id="btn_call">Call</button>
+        <button id="btn_hangup" disabled>Hang Up</button>
+    </div>
+
+    <div id="log">
+        <p>Press the button to call the displayed number...</p>
+    </div>
+
+    <script type="text/javascript" src="https://sdk.twilio.com/js/client/v1.13/twilio.min.js"></script>
+    <script type="text/javascript" src="./browser-call.js"></script>
+</body>
+
+</html>

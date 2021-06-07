@@ -1,0 +1,33 @@
+{
+  "name": "hotline",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "tsc --noEmit",
+    "start": "twilio-run --functions-folder dist/functions --assets-folder dist/assets",
+    "dev": "twilio serverless:start --ngrok=\"\" --functions-folder dist/functions --assets-folder dist/assets",
+    "deploy": "twilio-run deploy --functions-folder dist/functions --assets-folder dist/assets",
+    "build": "tsc && npm run build:copy-assets",
+    "build:copy-assets": "copyfiles src/assets/* src/assets/**/* --up 2 --exclude **/*.ts dist/assets/",
+    "prestart": "npm run build",
+    "predev": "npm run build",
+    "clean:source-maps": "rimraf dist/**/*.js.map",
+    "predeploy": "npm run build && npm run clean:source-maps"
+  },
+  "dependencies": {
+    "@twilio-labs/serverless-runtime-types": "^1.1",
+    "axios": "^0.21.1",
+    "googleapis": "^67.0.0",
+    "moment-timezone": "^0.5.32"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "twilio-cli": "^2.16.0",
+    "twilio-run": "^2.6.0",
+    "typescript": "^3.8"
+  },
+  "engines": {
+    "node": "12"
+  }
+}
